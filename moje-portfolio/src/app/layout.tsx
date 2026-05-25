@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Space_Grotesk, Inter, JetBrains_Mono } from "next/font/google";
 import "./globals.css";
 import Providers from "@/components/Providers";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 
 const display = Space_Grotesk({
   subsets: ["latin", "latin-ext"],
@@ -63,6 +64,7 @@ export default function RootLayout({
     >
       <body className="bg-ink text-fg antialiased">
         <Providers>{children}</Providers>
+        <SpeedInsights />
       </body>
     </html>
   );
