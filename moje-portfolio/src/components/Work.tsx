@@ -97,9 +97,13 @@ export default function Work() {
           </Reveal>
         </div>
 
-        <div className="mt-14 grid gap-12 md:grid-cols-2 md:gap-10 lg:gap-14">
+        <div className="mt-14 flex flex-wrap justify-center gap-12 md:gap-10 lg:gap-14">
           {WORK.map((w, i) => (
-            <Reveal key={w.url} delay={i * 0.08}>
+            <Reveal
+              key={w.url}
+              delay={i * 0.08}
+              className="w-full max-w-2xl"
+            >
               <WorkCard {...w} />
             </Reveal>
           ))}

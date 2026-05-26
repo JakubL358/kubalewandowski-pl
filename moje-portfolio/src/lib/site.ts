@@ -23,18 +23,10 @@ export const WORK = [
     href: "https://cherskymarketing.pl",
     image: "/work/chersky.webp",
   },
-  {
-    name: "ASK LEGAL",
-    url: "asklegal.pl",
-    href: "https://asklegal.pl",
-    image: "/work/asklegal.webp",
-  },
 ] as const;
 
 export const BRANDS = [
   { name: "Chersky Marketing", file: "/brands/chersky.svg" },
-  { name: "ASK LEGAL", file: "/brands/ask-legal.svg" },
-  { name: "PBS", file: "/brands/pbs.svg" },
   { name: "IML", file: "/brands/iml.svg" },
   { name: "Finergia", file: "/brands/finergia.svg" },
   { name: "Amka Finanse", file: "/brands/amka-finanse.svg" },
