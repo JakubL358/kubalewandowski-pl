@@ -3,6 +3,7 @@
 import { SITE } from "@/lib/site";
 import { useLenisInstance } from "./SmoothScroll";
 import { Icon } from "./Icon";
+import Signet from "./Signet";
 
 export default function Footer() {
   const lenis = useLenisInstance();
@@ -16,9 +17,7 @@ export default function Footer() {
       <div className="mx-auto flex w-full max-w-5xl flex-col gap-8 md:flex-row md:items-center md:justify-between">
         <div>
           <div className="flex items-center gap-2.5">
-            <span className="grid h-9 w-9 place-items-center rounded-[10px] bg-[linear-gradient(135deg,var(--blue),var(--violet))] font-display text-sm font-bold text-white">
-              JL
-            </span>
+            <Signet className="h-9 w-9" />
             <span className="font-display text-base font-semibold">
               Kuba Lewandowski
             </span>
@@ -45,6 +44,15 @@ export default function Footer() {
             <Icon name="whatsapp" className="h-4 w-4" />
             {SITE.phoneDisplay}
           </a>
+          <a
+            href={SITE.linkedin}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 text-sm text-fg-muted transition-colors hover:text-fg"
+          >
+            <Icon name="linkedin" className="h-4 w-4" />
+            LinkedIn
+          </a>
           <button
             onClick={toTop}
             className="inline-flex cursor-pointer items-center gap-2 text-sm text-fg-muted transition-colors hover:text-fg"
@@ -53,7 +61,7 @@ export default function Footer() {
             <Icon name="arrow-up-right" className="h-4 w-4" />
           </button>
           <p className="font-mono text-xs text-fg-dim">
-            © {new Date().getFullYear()} · JL
+            © {new Date().getFullYear()} · KL
           </p>
         </div>
       </div>

@@ -43,7 +43,7 @@ export default function Ekosystem() {
   return (
     <section id="ekosystem" className="relative scroll-mt-24 px-6 py-28 md:py-36">
       <div className="mx-auto w-full max-w-5xl">
-        <SectionLabel index="03">Jak to działa</SectionLabel>
+        <SectionLabel index="04">Jak to działa</SectionLabel>
 
         <div className="max-w-3xl">
           <Reveal>

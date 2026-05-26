@@ -5,6 +5,7 @@ import MagneticButton from "./MagneticButton";
 import { Icon } from "./Icon";
 import { EASE, stagger } from "@/lib/motion";
 import { useLenisInstance } from "./SmoothScroll";
+import Typewriter from "./Typewriter";
 
 export default function Hero() {
   const lenis = useLenisInstance();
@@ -50,8 +51,11 @@ export default function Hero() {
           variants={item}
           className="max-w-4xl font-display text-[clamp(2.6rem,7vw,5.5rem)] font-bold leading-[0.98] tracking-[-0.03em] text-fg"
         >
-          Twoja strona ma <span className="text-gradient">działać</span>, nie
-          tylko ładnie wyglądać.
+          <span className="block">Twoja strona ma</span>
+          <span className="block">
+            <Typewriter />
+          </span>
+          <span className="block">Nie tylko ładnie wyglądać.</span>
         </motion.h1>
 
         <motion.p

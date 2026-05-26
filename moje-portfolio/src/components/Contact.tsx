@@ -42,7 +42,7 @@ export default function Contact() {
   return (
     <section id="kontakt" className="relative scroll-mt-24 px-6 py-28 md:py-36">
       <div className="mx-auto w-full max-w-5xl">
-        <SectionLabel index="04">Kontakt</SectionLabel>
+        <SectionLabel index="05">Kontakt</SectionLabel>
 
         <div className="grid gap-12 md:grid-cols-2">
           <div>
@@ -113,7 +113,7 @@ export default function Contact() {
 
             <Reveal delay={0.18}>
               <p className="mt-6 font-mono text-sm text-fg-dim">
-                Do usłyszenia, JL. (i smacznej kawusi ☕)
+                Do usłyszenia, Kuba. (i smacznej kawusi ☕)
               </p>
             </Reveal>
           </div>
@@ -147,7 +147,7 @@ export default function Contact() {
                       onChange={(e) => setName(e.target.value)}
                       required
                       autoComplete="name"
-                      placeholder="Mareczek"
+                      placeholder="Tomek"
                       className={field}
                     />
                   </label>

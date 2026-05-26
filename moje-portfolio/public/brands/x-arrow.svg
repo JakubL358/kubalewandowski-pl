@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400">
+  <!-- X bar: top-left to bottom-right -->
+  <path d="M 101 59 L 59 101 L 299 341 L 341 299 Z" fill="#000000"/>
+  <!-- X bar: top-right to bottom-left -->
+  <path d="M 299 59 L 341 101 L 101 341 L 59 299 Z" fill="#000000"/>
+  <!-- Arrow: horizontal shaft + triangular head pointing right -->
+  <path d="M 20 185 L 255 185 L 255 158 L 348 200 L 255 242 L 255 215 L 20 215 Z" fill="#000000"/>
+</svg>

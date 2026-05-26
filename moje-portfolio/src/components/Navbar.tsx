@@ -94,6 +94,25 @@ export default function Navbar() {
           </div>
 
           <div className="flex items-center gap-2">
+            <a
+              href={`https://wa.me/${SITE.whatsapp}`}
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Napisz na WhatsApp"
+              className="hidden h-10 w-10 cursor-pointer place-items-center rounded-full border border-line text-fg-muted transition-colors hover:border-white/20 hover:text-fg sm:grid"
+            >
+              <Icon name="whatsapp" className="h-[18px] w-[18px]" />
+            </a>
+            <a
+              href={SITE.linkedin}
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Profil LinkedIn Kuby Lewandowskiego"
+              className="hidden h-10 w-10 cursor-pointer place-items-center rounded-full border border-line text-fg-muted transition-colors hover:border-white/20 hover:text-fg sm:grid"
+            >
+              <Icon name="linkedin" className="h-[18px] w-[18px]" />
+            </a>
+
             <button
               onClick={() => go("kontakt")}
               className="relative hidden cursor-pointer overflow-hidden rounded-full px-5 py-2.5 text-sm font-medium text-white sm:inline-flex"
@@ -144,6 +163,34 @@ export default function Navbar() {
             >
               {SITE.email}
             </motion.a>
+
+            <motion.div
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ delay: 0.4 }}
+              className="mt-6 flex gap-3"
+            >
+              <a
+                href={`https://wa.me/${SITE.whatsapp}`}
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Napisz na WhatsApp"
+                onClick={() => setOpen(false)}
+                className="grid h-12 w-12 place-items-center rounded-full border border-line text-fg-muted transition-colors hover:border-white/20 hover:text-fg"
+              >
+                <Icon name="whatsapp" className="h-5 w-5" />
+              </a>
+              <a
+                href={SITE.linkedin}
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Profil LinkedIn Kuby Lewandowskiego"
+                onClick={() => setOpen(false)}
+                className="grid h-12 w-12 place-items-center rounded-full border border-line text-fg-muted transition-colors hover:border-white/20 hover:text-fg"
+              >
+                <Icon name="linkedin" className="h-5 w-5" />
+              </a>
+            </motion.div>
           </motion.div>
         )}
       </AnimatePresence>

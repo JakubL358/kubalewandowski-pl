@@ -1,4 +1,5 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="30 30 140 140" width="140" height="140">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+  <title>Kuba Lewandowski — sygnet</title>
   <defs>
     <radialGradient id="main" cx="50%" cy="40%" r="60%">
       <stop offset="0%" stop-color="#A78BFA"/>
@@ -27,12 +28,12 @@
       <stop offset="100%" stop-color="#BE185D"/>
     </radialGradient>
   </defs>
-  <g stroke-width="8" stroke-linecap="round" fill="none">
+  <g stroke-width="6" stroke-linecap="round" fill="none">
     <line x1="120" y1="140" x2="56" y2="70" stroke="url(#line_left)"/>
     <line x1="120" y1="140" x2="144" y2="50" stroke="url(#line_right)"/>
     <line x1="56" y1="70" x2="144" y2="50" stroke="url(#line_top)"/>
   </g>
-  <circle cx="56" cy="70" r="14" fill="url(#sat_blue)"/>
-  <circle cx="144" cy="50" r="14" fill="url(#sat_wine)"/>
-  <circle cx="120" cy="140" r="23" fill="url(#main)"/>
+  <circle cx="56" cy="70" r="13" fill="url(#sat_blue)"/>
+  <circle cx="144" cy="50" r="13" fill="url(#sat_wine)"/>
+  <circle cx="120" cy="140" r="22" fill="url(#main)"/>
 </svg>

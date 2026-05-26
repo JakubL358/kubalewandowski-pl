@@ -42,6 +42,19 @@ const ICONS: Record<string, ReactNode> = {
       <path d="m6.3 6.3 3.4 3.4m4.6 4.6 3.4 3.4m0-11.4-3.4 3.4M9.7 14.3l-3.4 3.4" />
     </>
   ),
+  lock: (
+    <>
+      <rect x="5" y="11" width="14" height="9" rx="2" />
+      <path d="M8 11V8a4 4 0 0 1 8 0v3" />
+    </>
+  ),
+  linkedin: (
+    <>
+      <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
+      <rect x="2" y="9" width="4" height="12" />
+      <circle cx="4" cy="4" r="2" />
+    </>
+  ),
   "arrow-right": <path d="M5 12h13m-5-6 6 6-6 6" />,
   "arrow-down": <path d="M12 5v13m-6-5 6 6 6-6" />,
   "arrow-up-right": <path d="M7 17 17 7M8 7h9v9" />,
